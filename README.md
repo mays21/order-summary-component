@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.commays21/order-summary-component/](https://github.com/mays21/order-summary-component/)
+- Solution URL: [https://github.com/mays21/order-summary-component/](https://github.com/mays21/order-summary-component/)
 - Live Site URL: [https://mays21.github.io/order-summary-component/](https://mays21.github.io/order-summary-component/)
 
 ## My process
