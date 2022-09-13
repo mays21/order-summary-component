@@ -1,0 +1,134 @@
+/* Font and Color */
+html {
+  font-size: 16px;
+}
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 120%;
+  }
+}
+
+main {
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+.card {
+  box-shadow: 0px 20px 20px hsla(245, 75%, 52%, 0.1);
+}
+.card-title,
+.plan-name {
+  color: hsl(223, 47%, 23%);
+}
+.card-title {
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+.card-text {
+  color: hsl(224, 23%, 55%);
+}
+.plan {
+  background-color: hsl(225, 100%, 98%);
+  font-size: 1rem;
+}
+.plan-name {
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+.plan-price {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.8rem;
+}
+.plan-change {
+  color: hsl(245, 75%, 52%);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.plan-change:hover,
+.plan-change:active,
+.plan-change:focus {
+  color: hwb(245 44% 6%);
+}
+.btn-primary {
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 2px 20px 20px hsla(245, 75%, 52%, 0.2);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: hwb(245 44% 6%);
+}
+.btn-cancel {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+}
+.btn-cancel:hover,
+.btn-cancel:active,
+.btn-cancel:focus {
+  color: hsl(223, 47%, 23%);
+}
+
+/* Position */
+main {
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 100%;
+  max-width: 450px;
+  margin: 1.5rem;
+  border-radius: 1.3rem;
+  overflow: hidden;
+}
+.card-body {
+  margin: 0.8rem;
+}
+.card-text {
+  padding: 1rem 0;
+}
+.plan {
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+.price > div {
+  display: flex;
+  flex-direction: column;
+}
+.plan-name {
+  padding: 1rem 0 0;
+  margin: 0;
+  text-align: left;
+  line-height: 1.5rem;
+}
+.plan-price {
+  text-align: left;
+  padding: 0;
+}
+.btn-primary {
+  width: 100%;
+  padding: 0.9em;
+  border-radius: 0.6rem;
+  margin: 1rem 0;
+}
+.btn-cancel {
+  display: block;
+  margin: 0 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
