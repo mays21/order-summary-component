@@ -1,15 +1,25 @@
 /* Font and Color */
 html {
-  font-size: 16px;
+  font-size: 20px;
 }
-@media screen and (min-width: 960px) {
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: repeat no-repeat;
+}
+@media screen and (max-width: 375px) {
   html {
-    font-size: 120%;
+    font-size: 16px;
+  }
+  body {
+    background-image: url(../images/pattern-background-mobil.svg);
+  }
+  .card,
+  .plan {
+    font-size: 18px;
   }
 }
-
 main {
-  background-color: hsl(225, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
 }
 .card {
@@ -25,14 +35,15 @@ main {
 }
 .card-text {
   color: hsl(224, 23%, 55%);
+  font-size: 0.8em;
 }
 .plan {
   background-color: hsl(225, 100%, 98%);
-  font-size: 1rem;
+  /* font-size: 1rem; */
 }
 .plan-name {
   font-weight: 900;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .plan-price {
   color: hsl(224, 23%, 55%);
@@ -50,8 +61,8 @@ main {
 }
 .btn-primary {
   background-color: hsl(245, 75%, 52%);
-  box-shadow: 2px 20px 20px hsla(245, 75%, 52%, 0.2);
-  font-size: 0.9rem;
+  box-shadow: 2px 20px 20px hsl(245, 75%, 52%, 0.2);
+  font-size: 0.8em;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -61,7 +72,7 @@ main {
 }
 .btn-cancel {
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.8em;
   font-weight: 900;
   color: hsl(224, 23%, 55%);
 }
@@ -84,29 +95,34 @@ main {
 .card {
   width: 100%;
   max-width: 450px;
-  margin: 1.5rem;
+  margin: 1.6rem;
   border-radius: 1.3rem;
   overflow: hidden;
 }
 .card-body {
-  margin: 0.8rem;
+  margin: 1em 1rem;
+}
+.card-title {
+  margin-bottom: 0;
 }
 .card-text {
-  padding: 1rem 0;
+  padding: 1em 1rem;
+  line-height: 1.6em;
+  margin-bottom: 0;
 }
 .plan {
   width: 100%;
-  margin: 1rem 0;
   display: flex;
   align-items: center;
   border-radius: 0.8rem;
+  padding: 0.2rem;
 }
 .price > div {
   display: flex;
   flex-direction: column;
 }
 .plan-name {
-  padding: 1rem 0 0;
+  padding: 1em 0 0;
   margin: 0;
   text-align: left;
   line-height: 1.5rem;
@@ -117,9 +133,9 @@ main {
 }
 .btn-primary {
   width: 100%;
-  padding: 0.9em;
-  border-radius: 0.6rem;
-  margin: 1rem 0;
+  padding: 0.8em;
+  border-radius: 0.6em;
+  margin: 2em 0;
 }
 .btn-cancel {
   display: block;

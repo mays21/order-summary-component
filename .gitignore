@@ -15,4 +15,7 @@
 .DS_Store
 .prettierignore
 
+# Avoid FrontEnd Mentor Instruction File
 design/*
+*template.md
+style-guid.md
